@@ -122,6 +122,8 @@ ls -1 k8s/istio/ingress/app
 
 cat k8s/istio/ingress/app/ingress.yaml
 
+kubectl create namespace go-demo-7
+
 kubectl --namespace go-demo-7 apply \
     --filename k8s/istio/ingress/ \
     --recursive
@@ -153,4 +155,6 @@ cd ..
 
 kubectl delete namespace go-demo-7
 
+
+#
 # Destroy the cluster (optional)
